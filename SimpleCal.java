@@ -3,6 +3,9 @@
 import java.util.Scanner;
 
 public class SimpleCal{
+    public static double division(int num1, int num2){
+        return ((double)num1/(double)num2);
+    }
 
     public static void getUserInput(){
         int choice;
@@ -20,7 +23,12 @@ public class SimpleCal{
                      //subtract();
                      break;
                 case 3: 
-                     //division();
+                     System.out.println("Enter the numbers as below...");
+                     System.out.print("First Number: ");
+                     int num1 = scanInputs.nextInt();
+                     System.out.print("Second Number: ");
+                     int num2 = scanInputs.nextInt();
+                     System.out.println("Division: "+division(num1,num2));
                      break;
                 case 4: 
                      //product();
