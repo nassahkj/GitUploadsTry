@@ -3,6 +3,7 @@
 import java.util.Scanner;
 
 public class SimpleCal{
+
     public static double division(int num1, int num2){
         return ((double)num1/(double)num2);
     }
@@ -13,6 +14,10 @@ public class SimpleCal{
 
     public static double product(int num1, int num2){
         return ((double)num1*(double)num2);
+
+
+    public static int subtract(int num1, int num2){
+        return (num1-num2);
 
     }
 
@@ -35,23 +40,28 @@ public class SimpleCal{
 
                      break;
                 case 2:
-                     //subtract();
+                     System.out.println("Enter the numbers as below...");
+                     System.out.println("First number: ");
+                     int num3 = scanInputs.nextInt();
+                     System.out.println("Second number: ");
+                     int num4 = scanInputs.nextInt();
+                     System.out.println("Difference : "+subtract(num3,num4));
                      break;
                 case 3: 
                      System.out.println("Enter the numbers as below...");
                      System.out.print("First Number: ");
-                     int num1 = scanInputs.nextInt();
+                     int num7 = scanInputs.nextInt();
                      System.out.print("Second Number: ");
-                     int num2 = scanInputs.nextInt();
-                     System.out.println("Division: "+division(num1,num2));
+                     int num8 = scanInputs.nextInt();
+                     System.out.println("Division: "+division(num7,num8));
                      break;
                 case 4: 
                       System.out.println("Enter the numbers as below...");
                       System.out.print("First Number: ");
-                      int num1 = scanInputs.nextInt();
+                      int num9 = scanInputs.nextInt();
                       System.out.print("Second Number: ");
-                      int num2 = scanInputs.nextInt();
-                      System.out.println("Product: "+product(num1,num2));
+                      int num10 = scanInputs.nextInt();
+                      System.out.println("Product: "+product(num9,num10));
                      break;
                 case 7:
                 System.out.println("....To be handled later...!");
