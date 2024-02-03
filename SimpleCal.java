@@ -14,6 +14,7 @@ public class SimpleCal{
 
     public static double product(int num1, int num2){
         return ((double)num1*(double)num2);
+    }
 
 
     public static int subtract(int num1, int num2){
@@ -72,7 +73,7 @@ public class SimpleCal{
                 
                    
         }
-        
+        scanInputs.close();
             
         }
        
