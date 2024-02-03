@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class SimpleCal{
 
+    public static double product(int num1, int num2){
+        return ((double)num1*(double)num2);
+
+    }
+
     public static void getUserInput(){
         int choice;
         Scanner scanInputs = new Scanner(System.in);
@@ -23,7 +28,12 @@ public class SimpleCal{
                      //division();
                      break;
                 case 4: 
-                     //product();
+                      System.out.println("Enter the numbers as below...");
+                      System.out.print("First Number: ");
+                      int num1 = scanInputs.nextInt();
+                      System.out.print("Second Number: ");
+                      int num2 = scanInputs.nextInt();
+                      System.out.println("Product: "+product(num1,num2));
                      break;
                 case 7:
                 System.out.println("....To be handled later...!");
