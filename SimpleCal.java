@@ -69,6 +69,8 @@ public class SimpleCal{
                 break;                          
                                
                 default:
+
+                    System.out.println("Try using the right choice...!");
                     break;
                 
                    
