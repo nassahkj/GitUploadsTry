@@ -3,6 +3,9 @@
 import java.util.Scanner;
 
 public class SimpleCal{
+    public static int subtract(int num1, int num2){
+        return (num1-num2);
+    }
 
     public static void getUserInput(){
         int choice;
@@ -17,7 +20,12 @@ public class SimpleCal{
                      //addition();
                      break;
                 case 2:
-                     //subtract();
+                     System.out.println("Enter the numbers as below...");
+                     System.out.println("First number: ");
+                     int num1 = scanInputs.nextInt();
+                     System.out.println("Second number: ");
+                     int num2 = scanInputs.nextInt();
+                     System.out.println("Difference : "+subtract(num1,num2));
                      break;
                 case 3: 
                      //division();
